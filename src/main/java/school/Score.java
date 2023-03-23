@@ -1,4 +1,4 @@
-package grade.school.obj;
+package school;
 
 public class Score {
     private int studentId;

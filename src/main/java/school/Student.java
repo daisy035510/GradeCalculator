@@ -1,4 +1,4 @@
-package grade.school.obj;
+package school;
 
 import java.util.List;
 

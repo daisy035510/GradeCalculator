@@ -1,4 +1,4 @@
-package grade.school.obj;
+package school;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ public class Subject {
     private int subjectId;
     private String subjectName;
     private int gradeType; // 과목 평가 방법, 기본적으로 A, B
-    private List<String> studentList;
+    private List<Student> studentList;
 
-    public Subject(int subjectId, String subjectName, int gradeType, List<String> studentList) {
+    public Subject(int subjectId, String subjectName, int gradeType, List<Student> studentList) {
         this.subjectId = subjectId;
         this.subjectName = subjectName;
         this.gradeType = gradeType;
@@ -39,11 +39,11 @@ public class Subject {
         this.gradeType = gradeType;
     }
 
-    public List<String> getStudentList() {
+    public List<Student> getStudentList() {
         return studentList;
     }
 
-    public void setStudentList(List<String> studentList) {
+    public void setStudentList(List<Student> studentList) {
         this.studentList = studentList;
     }
 }
