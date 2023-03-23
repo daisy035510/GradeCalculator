@@ -1,5 +1,8 @@
 package school;
 
+import util.GradeTypeEnum;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Subject {
@@ -8,11 +11,11 @@ public class Subject {
     private int gradeType; // 과목 평가 방법, 기본적으로 A, B
     private List<Student> studentList;
 
-    public Subject(int subjectId, String subjectName, int gradeType, List<Student> studentList) {
-        this.subjectId = subjectId;
+    public Subject(String subjectName, int subjectId) {
         this.subjectName = subjectName;
-        this.gradeType = gradeType;
-        this.studentList = studentList;
+        this.subjectId = subjectId;
+        this.gradeType = GradeTypeEnum.AB_TYPE.getType(); // 기본적으로 A, B
+        this.studentList = new ArrayList<>();
     }
 
     public int getSubjectId() {
@@ -45,5 +48,8 @@ public class Subject {
 
     public void setStudentList(List<Student> studentList) {
         this.studentList = studentList;
+    }
+    public void regitser(Student student) {
+        studentList.add(student);
     }
 }

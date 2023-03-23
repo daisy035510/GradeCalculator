@@ -10,9 +10,11 @@ public class School {
 
     private static School school = new School();
 
+    private static String SCHOOL_NAME = "Good School";
     private List<Student> studentList = new ArrayList<>();
     private List<Subject> subjectList = new ArrayList<>();
 
+    // singleton 패턴이기 때문에 private으로 선언
     private School() {
 
     }
@@ -23,14 +25,6 @@ public class School {
         }
 
         return school;
-    }
-
-    public static School getSchool() {
-        return school;
-    }
-
-    public static void setSchool(School school) {
-        School.school = school;
     }
 
     public List<Student> getStudentList() {
@@ -54,6 +48,6 @@ public class School {
     }
 
     public void addSubject(Subject subject) {
-        this.addSubject(subject);
+        this.subjectList.add(subject);
     }
 }

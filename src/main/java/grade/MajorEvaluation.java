@@ -1,6 +1,6 @@
 package grade;
 
-public class MajorEvaluation implements GradeInterface {
+public class MajorEvaluation implements GradeEvaluation {
     @Override
     public String getGrade(int point) {
         String grade;

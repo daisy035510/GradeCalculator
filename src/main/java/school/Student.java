@@ -1,17 +1,19 @@
 package school;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
     private int studentId;
     private String studentName;
     private Subject major;
-    private List<String> scoreList;
+    private List<Score> scoreList;
 
     public Student(int studentId, String studentName, Subject major) {
         this.studentId = studentId;
         this.studentName = studentName;
         this.major = major;
+        this.scoreList = new ArrayList<>();
     }
 
     public int getStudentId() {
@@ -38,11 +40,15 @@ public class Student {
         this.major = major;
     }
 
-    public List<String> getScoreList() {
+    public List<Score> getScoreList() {
         return scoreList;
     }
 
-    public void setScoreList(List<String> scoreList) {
+    public void setScoreList(List<Score> scoreList) {
         this.scoreList = scoreList;
+    }
+
+    public void addSubjectScore(Score score) {
+        scoreList.add(score);
     }
 }

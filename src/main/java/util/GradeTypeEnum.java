@@ -1,6 +1,6 @@
 package util;
 
-public enum GradeType {
+public enum GradeTypeEnum {
 
     AB_TYPE(0), // A, B, C TYPE
     SAB_TYPE(1), // S, A, B, C TYPE
@@ -9,7 +9,11 @@ public enum GradeType {
 
     private int type;
 
-    private GradeType(int type) {
+    private GradeTypeEnum(int type) {
         this.type = type;
+    }
+
+    public int getType() {
+        return type;
     }
 }

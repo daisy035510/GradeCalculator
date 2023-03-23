@@ -1,8 +1,13 @@
 package grade;
 
-public class PassFailEvaluation implements GradeInterface{
+public class PassFailEvaluation implements GradeEvaluation {
     @Override
     public String getGrade(int score) {
-        return null;
+
+        if(score >= 70) {
+            return "P";
+        }
+
+        return "F";
     }
 }

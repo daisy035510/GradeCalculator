@@ -2,12 +2,12 @@ package school;
 
 public class Score {
     private int studentId;
-    private Subject subjectId;
+    private Subject subject;
     private int point;
 
     public Score(int studentId, Subject subjectd, int point) {
         this.studentId = studentId;
-        this.subjectId = subjectd;
+        this.subject = subjectd;
         this.point = point;
     }
 
@@ -19,12 +19,12 @@ public class Score {
         this.studentId = studentId;
     }
 
-    public Subject getSubjectId() {
-        return subjectId;
+    public Subject getSubject() {
+        return subject;
     }
 
-    public void setSubjectId(Subject subjectId) {
-        this.subjectId = subjectId;
+    public void setSubject(Subject subject) {
+        this.subject = subject;
     }
 
     public int getPoint() {

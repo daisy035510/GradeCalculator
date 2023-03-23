@@ -1,5 +1,5 @@
 package grade;
 
-public interface GradeInterface {
+public interface GradeEvaluation {
     public String getGrade(int point);
 }
